@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Estilização Pessoal */
+
+$ligth-blue: rgba(0, 212, 255, 1);
+$dark-blue: rgba(2, 0, 36, 1);
+
+.foto_pessoal {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+body {
+  padding: 4px;
+  background: $ligth-blue no-repeat center center fixed;
+  background: linear-gradient(180deg, $ligth-blue 0%, $dark-blue 100%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background-color: rgba(60, 60, 120, 0.8);
+  border-radius: 4px;
+  padding: 4px;
+
+  .welcome_msg_div {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.2rem;
+    color: white;
+    text-align: justify;
+  }
+
+  .avatar_div {
+    display: flex;
+    justify-content: start;
+
+    div {
+      display: flex;
+      align-items: center;
+
+      section.open_close_scmd {
+        div.open {
+          i {
+            color: red;
+            margin: 8px;
+            font-size: 2.5rem;
+          }
+        }
+        div.close {
+          display: none;
+          i {
+            color: red;
+            margin: 8px;
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  address.icons {
+    display: none;
+  }
+
+  address ul.social_media {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    li {
+      font-size: 2rem;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:link {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        cursor: pointer;
+      }
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    li:nth-child(1) {
+      align-self: flex-start;
+    }
+    li:nth-child(2) {
+      align-self: center;
+    }
+    li:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Estilização Pessoal */
+.foto_pessoal {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+body {
+  padding: 4px;
+  background: #00d4ff no-repeat center center fixed;
+  background: linear-gradient(180deg, #00d4ff 0%, #020024 100%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background-color: rgba(60, 60, 120, 0.8);
+  border-radius: 4px;
+  padding: 4px;
+}
+header .welcome_msg_div {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2rem;
+  color: white;
+  text-align: justify;
+}
+header .avatar_div {
+  display: flex;
+  justify-content: start;
+}
+header .avatar_div div {
+  display: flex;
+  align-items: center;
+}
+header .avatar_div div section.open_close_scmd div.open i {
+  color: red;
+  margin: 8px;
+  font-size: 2.5rem;
+}
+header .avatar_div div section.open_close_scmd div.close {
+  display: none;
+}
+header .avatar_div div section.open_close_scmd div.close i {
+  color: red;
+  margin: 8px;
+  font-size: 2.5rem;
+}
+header address.icons {
+  display: none;
+}
+header address ul.social_media {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+header address ul.social_media li {
+  font-size: 2rem;
+}
+header address ul.social_media li a {
+  text-decoration: none;
+  color: white;
+}
+header address ul.social_media li a:link {
+  text-decoration: none;
+  color: white;
+}
+header address ul.social_media li a:hover {
+  cursor: pointer;
+}
+header address ul.social_media li a:visited {
+  text-decoration: none;
+  color: white;
+}
+header address ul.social_media li:nth-child(1) {
+  align-self: flex-start;
+}
+header address ul.social_media li:nth-child(2) {
+  align-self: center;
+}
+header address ul.social_media li:nth-child(3) {
+  align-self: flex-end;
+}
+
+/*# sourceMappingURL=style.css.map */
